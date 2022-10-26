@@ -17,5 +17,12 @@ public class UserRegistrationTest {
         Assertions.assertTrue(UserRegistration.lastName("Priyadarshi"));
         Assertions.assertFalse(UserRegistration.lastName("priyadarshi"));
     }
+
+    @Test
+    void email() throws UserRegistrationException {
+        Assertions.assertTrue(UserRegistration.email("nitishpriyadarshi692@gmail.com"));
+        Assertions.assertFalse(UserRegistration.email("nitish"));
+    }
 }
+
 
