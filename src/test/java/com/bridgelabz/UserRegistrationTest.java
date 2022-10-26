@@ -9,6 +9,13 @@ public class UserRegistrationTest {
     @Test
     public void testFirstName() throws UserRegistrationException {
         Assertions.assertTrue(UserRegistration.firstName("Nitish"));
-        Assertions.assertFalse(UserRegistration.firstName("adarshi"));
+        Assertions.assertFalse(UserRegistration.firstName("nitish"));
+    }
+
+    @Test
+    void lastName() throws UserRegistrationException {
+        Assertions.assertTrue(UserRegistration.lastName("Priyadarshi"));
+        Assertions.assertFalse(UserRegistration.lastName("priyadarshi"));
     }
 }
+
