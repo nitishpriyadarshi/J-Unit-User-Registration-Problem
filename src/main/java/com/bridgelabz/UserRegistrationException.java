@@ -15,6 +15,7 @@ public class UserRegistrationException  extends Exception{
 
     @Override
     public String toString() {
+
         return message;
     }
 }
