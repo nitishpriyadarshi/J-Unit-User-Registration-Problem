@@ -49,6 +49,11 @@ public class UserRegistrationTest {
         Assertions.assertTrue(UserRegistration.passwordRule4("nItish23@23"));
         Assertions.assertFalse(UserRegistration.passwordRule4("DSAsDSE42"));
     }
+    @Test
+    void emailIdValidator() throws UserRegistrationException {
+        Assertions.assertTrue(UserRegistration.emailIdValidator("abc.100@abc.com.au"));
+        Assertions.assertFalse(UserRegistration.emailIdValidator("abc@gmail.com.aa.au"));
+    }
 }
 
 
