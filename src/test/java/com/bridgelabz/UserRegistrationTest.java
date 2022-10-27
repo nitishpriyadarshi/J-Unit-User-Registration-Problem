@@ -38,6 +38,11 @@ public class UserRegistrationTest {
         Assertions.assertTrue(UserRegistration.passwordRule2("cpR#$23Qd"));
         Assertions.assertFalse(UserRegistration.passwordRule2("pqrsh#@5"));
     }
+    @Test
+    void passwordRule3() throws UserRegistrationException {
+        Assertions.assertTrue(UserRegistration.passwordRule3("gS#4refF"));
+        Assertions.assertFalse(UserRegistration.passwordRule3("sssHSa%$"));
+    }
 }
 
 
